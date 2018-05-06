@@ -1,6 +1,6 @@
 import config from './config';
 
-export default (resource) => new Promise(
+export const get = (resource) => new Promise(
     (resolve, reject) => {
         fetch(
             `${config.API_PROTOCOL}${config.API_URI}/${resource}`,
