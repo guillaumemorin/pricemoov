@@ -44,6 +44,9 @@ class App extends Component {
     render() {
         const {checkValidation, agencies, categories, hasError, agency, category, prices} = this.state;
         if(hasError) return <div>{'Something went wrong...'}</div>;
+        const formattedPricesList = prices
+            .filter((priceData) => !checkValidation || priceData.isValidated)
+            .sort((a, b) => a.startDate - b.startDate);
         return (
             <div>
                 <div className="header">
@@ -58,21 +61,20 @@ class App extends Component {
                             value={category} />
                 </div>
                 <div className="results-container">
-                    {prices.length > 0 && <div className="results-container-row">
+                    {formattedPricesList.length > 0 && <div className="results-container-row">
                         <span className="results-container-cell">Date</span>
                         <span className="results-container-cell">Price</span>
                         <span className="results-container-cell">Suggested price</span>
                     </div>}
-                    {prices.map((priceData, index) => {
-                        if(checkValidation && !priceData.isValidated) return null;
-                        return (
+                    {formattedPricesList
+                        .map((priceData, index) => (
                             <div className="results-container-row" key={index}>
                                 <span className="results-container-cell">{moment(priceData.startDate).format("YYYY-MM-DD HH:mm:ss")}</span>
                                 <span className="results-container-cell">{priceData.price}</span>
                                 <span className="results-container-cell">{priceData.suggestedPrice}</span>
                             </div>
-                        );
-                    })}
+                        )
+                    )}
                 </div>
                 <div className="toggle-container">
                     <span className="toggle-label">{'Validated'}</span>
