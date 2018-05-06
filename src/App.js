@@ -9,7 +9,7 @@ class App extends Component {
         super(props);
         this.handleChangeAgencies = (event) => this.changeAgencies(event);
         this.handleChangeCategories = (event) => this.changeCategories(event);
-        this.handleChangeValidated = (event) => this.changeValidated(event);
+        this.handleChangeCheckValidation = (event) => this.changeCheckValidationStatus(event);
         this.state = {
             checkValidation: false,
             prices: [],
@@ -27,34 +27,35 @@ class App extends Component {
     }
     changeAgencies(event) {
         const agency = event.target.value;
-        this.setState({agency});
+        this.setState({agency, category: null, prices: []});
         actions.category.list(agency)
             .then((categories) => this.setState({categories}));
     }
     changeCategories(event) {
         const {agency} = this.state;
         const category = event.target.value;
+        this.setState({agency, category});
         actions.price.list(agency, category)
             .then((prices) => this.setState({prices}))
     }
-    changeValidated(event) {
+    changeCheckValidationStatus(event) {
         this.setState({checkValidation: event.target.checked});
     }
     render() {
-        const {checkValidation, agencies, categories, hasError, agency, prices} = this.state;
+        const {checkValidation, agencies, categories, hasError, agency, category, prices} = this.state;
         if(hasError) return <div>{'Something went wrong...'}</div>;
-        console.log('>>>>', checkValidation)
-
         return (
             <div>
                 <div className="header">
                     <Select options={agencies}
                             placeholder={'Select your agency'}
-                            onChange={this.handleChangeAgencies} />
+                            onChange={this.handleChangeAgencies}
+                            value={agency} />
                     <Select options={categories}
                             placeholder={'Select your category'}
                             disabled={Boolean(!agency)}
-                            onChange={this.handleChangeCategories} />
+                            onChange={this.handleChangeCategories}
+                            value={category} />
                 </div>
                 <div className="results-container">
                     {prices.length > 0 && <div className="results-container-row">
@@ -75,7 +76,7 @@ class App extends Component {
                 </div>
                 <div className="toggle-container">
                     <span className="toggle-label">{'Validated'}</span>
-                    <Toggle onChange={this.handleChangeValidated}/>
+                    <Toggle onChange={this.handleChangeCheckValidation}/>
                 </div>
             </div>
         );
