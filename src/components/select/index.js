@@ -1,15 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './style.css';
 
 const Select = ({options = [], disabled, onChange, placeholder}) => {
     if(!Array.isArray(options)) return null;
     return (
-        <select disabled={disabled} onChange={onChange}>
-            <option value="" disabled selected>{placeholder}</option>
-            {options.map((opt, index) => (
-                <option key={index} value={opt.id}>{opt.name}</option>
-            ))}
-        </select>
+        <div className="custom-select">
+            <select disabled={disabled} onChange={onChange}>
+                <option value="" disabled selected>{placeholder}</option>
+                {options.map((opt, index) => (
+                    <option key={index} value={opt.id}>{opt.name}</option>
+                ))}
+            </select>
+        </div>
     );
 };
 
