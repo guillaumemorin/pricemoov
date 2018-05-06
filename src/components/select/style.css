@@ -1,0 +1,52 @@
+div.custom-select {
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.custom-select select {
+    display: inline-block;
+    border: 1px solid #bbb;
+    padding: 10px;
+    margin: 0;
+    min-width: 200px;
+    font: helvetica;
+    font-size: 13px;
+    outline:none;
+    line-height: 1.2;
+    color: #555;
+    background: #fff;
+    -webkit-appearance:none;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .custom-select select {
+        padding-right:30px;
+    }
+}
+
+.custom-select:after {
+    content: "▼";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 60%;
+    line-height: 20px;
+    padding: 10px;
+    background: #bbb;
+    color: white;
+
+    pointer-events:none;
+
+    -webkit-border-radius: 0 6px 6px 0;
+    -moz-border-radius: 0 6px 6px 0;
+    border-radius: 0 6px 6px 0;
+}
+
+.no-pointer-events .custom-select:after {
+    content: none;
+}
