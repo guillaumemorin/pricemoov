@@ -61,7 +61,7 @@ class App extends Component {
                             value={category} />
                 </div>
                 <div className="results-container">
-                    {formattedPricesList.length > 0 && <div className="results-container-row">
+                    {formattedPricesList.length > 0 && <div className="results-container-row-header">
                         <span className="results-container-cell">Date</span>
                         <span className="results-container-cell">Price</span>
                         <span className="results-container-cell">Suggested price</span>

@@ -28,6 +28,7 @@
 }
 
 .results-container {
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,10 +38,35 @@
 }
 
 .results-container-row{
+    font-size: 14px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    border-top: 2px solid #ccc;
+    border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+}
+
+.results-container-row-header {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #ccc;
+    border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    background-color: whitesmoke;
+    font-weight: bold;
+}
+
+.results-container-row:last-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ccc;
 }
 
 .results-container-cell{
