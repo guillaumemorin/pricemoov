@@ -4,7 +4,7 @@ import {Select, Toggle} from './components';
 import moment from 'moment';
 import './App.css';
 
-class App extends Component {
+export default class App extends Component {
     constructor(props){
         super(props);
         this.handleChangeAgencies = (event) => this.changeAgencies(event);
@@ -84,5 +84,3 @@ class App extends Component {
         );
   }
 }
-
-export default App;
