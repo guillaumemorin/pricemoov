@@ -1,3 +1,13 @@
+<h1 align="center">
+    <img src="https://raw.githubusercontent.com/guillaumemorin/pricemoov/master/pricemoov_logo.png" width="100" />
+	Pricemoov
+</h1>
+<p align="center">
+	<a href='https://semaphoreci.com/guillaumemorin/pricemoov'> <img src='https://semaphoreci.com/api/v1/guillaumemorin/pricemoov/branches/master/shields_badge.svg' alt='Build Status'></a>
+</p>
+
+## Info
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 ## Available Scripts

@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+
 import config from './config';
 
 export const get = resource =>
