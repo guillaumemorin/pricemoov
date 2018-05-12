@@ -1,0 +1,241 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checked status 1`] = `
+<label
+  className="sc-bdVaJa gEhoXm"
+>
+  <label
+    className="sc-bwzfXH kxstlt"
+    height={34}
+    onChange={undefined}
+    width={60}
+  >
+    <input
+      checked={true}
+      className="sc-htpNat fiJnNt"
+      disabled={undefined}
+      name={undefined}
+      type="checkbox"
+      value={undefined}
+    />
+    <span
+      className="sc-bxivhb bVxZQT"
+    />
+  </label>
+</label>
+`;
+
+exports[`Disabled status 1`] = `
+<label
+  className="sc-bdVaJa gEhoXm"
+>
+  <label
+    className="sc-bwzfXH kxstlt"
+    height={34}
+    onChange={undefined}
+    width={60}
+  >
+    <input
+      checked={undefined}
+      className="sc-htpNat fiJnNt"
+      disabled={true}
+      name={undefined}
+      type="checkbox"
+      value={undefined}
+    />
+    <span
+      className="sc-bxivhb bVxZQT"
+    />
+  </label>
+</label>
+`;
+
+exports[`Display custom background colors 1`] = `
+<label
+  className="sc-bdVaJa gEhoXm"
+>
+  <label
+    className="sc-bwzfXH kxstlt"
+    height={34}
+    onChange={undefined}
+    width={60}
+  >
+    <input
+      checked={undefined}
+      className="sc-htpNat ieUyQK"
+      disabled={undefined}
+      name={undefined}
+      type="checkbox"
+      value={undefined}
+    />
+    <span
+      className="sc-bxivhb iFLvUd"
+    />
+  </label>
+</label>
+`;
+
+exports[`Display custom sizes 1`] = `
+<label
+  className="sc-bdVaJa gEhoXm"
+>
+  <label
+    className="sc-bwzfXH kzxgge"
+    height={20}
+    onChange={undefined}
+    width={40}
+  >
+    <input
+      checked={undefined}
+      className="sc-htpNat XYBVe"
+      disabled={undefined}
+      name={undefined}
+      type="checkbox"
+      value={undefined}
+    />
+    <span
+      className="sc-bxivhb isUKdx"
+    />
+  </label>
+</label>
+`;
+
+exports[`Display left label 1`] = `
+<label
+  className="sc-bdVaJa gEhoXm"
+>
+  <span
+    className="sc-ifAKCX lnyuBs"
+  >
+    Label
+  </span>
+  <label
+    className="sc-bwzfXH kxstlt"
+    height={34}
+    onChange={undefined}
+    width={60}
+  >
+    <input
+      checked={undefined}
+      className="sc-htpNat fiJnNt"
+      disabled={undefined}
+      name={undefined}
+      type="checkbox"
+      value={undefined}
+    />
+    <span
+      className="sc-bxivhb bVxZQT"
+    />
+  </label>
+</label>
+`;
+
+exports[`Display left label 2`] = `
+<label
+  className="sc-bdVaJa gEhoXm"
+>
+  <span
+    className="sc-ifAKCX lnyuBs"
+  >
+    Label
+  </span>
+  <label
+    className="sc-bwzfXH kxstlt"
+    height={34}
+    onChange={undefined}
+    width={60}
+  >
+    <input
+      checked={undefined}
+      className="sc-htpNat fiJnNt"
+      disabled={undefined}
+      name={undefined}
+      type="checkbox"
+      value={undefined}
+    />
+    <span
+      className="sc-bxivhb bVxZQT"
+    />
+  </label>
+</label>
+`;
+
+exports[`Display right label 1`] = `
+<label
+  className="sc-bdVaJa gEhoXm"
+>
+  <label
+    className="sc-bwzfXH kxstlt"
+    height={34}
+    onChange={undefined}
+    width={60}
+  >
+    <input
+      checked={undefined}
+      className="sc-htpNat fiJnNt"
+      disabled={undefined}
+      name={undefined}
+      type="checkbox"
+      value={undefined}
+    />
+    <span
+      className="sc-bxivhb bVxZQT"
+    />
+  </label>
+  <span
+    className="sc-ifAKCX lnyuBs"
+  >
+    Label
+  </span>
+</label>
+`;
+
+exports[`Set input name and value 1`] = `
+<label
+  className="sc-bdVaJa gEhoXm"
+>
+  <label
+    className="sc-bwzfXH kxstlt"
+    height={34}
+    onChange={undefined}
+    width={60}
+  >
+    <input
+      checked={undefined}
+      className="sc-htpNat fiJnNt"
+      disabled={undefined}
+      name="toggle"
+      type="checkbox"
+      value="toggleValue"
+    />
+    <span
+      className="sc-bxivhb bVxZQT"
+    />
+  </label>
+</label>
+`;
+
+exports[`Standard output 1`] = `
+<label
+  className="sc-bdVaJa gEhoXm"
+>
+  <label
+    className="sc-bwzfXH kxstlt"
+    height={34}
+    onChange={undefined}
+    width={60}
+  >
+    <input
+      checked={undefined}
+      className="sc-htpNat fiJnNt"
+      disabled={undefined}
+      name={undefined}
+      type="checkbox"
+      value={undefined}
+    />
+    <span
+      className="sc-bxivhb bVxZQT"
+    />
+  </label>
+</label>
+`;
