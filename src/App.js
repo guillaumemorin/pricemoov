@@ -77,8 +77,14 @@ export default class App extends Component {
                     )}
                 </div>
                 <div className="toggle-container">
-                    <span className="toggle-label">{'Validated'}</span>
-                    <Toggle onChange={this.handleChangeCheckValidation}/>
+                    <Toggle backgroundColorChecked={'#1ae3dd'}
+                            width={50}
+                            height={30}
+                            sliderWidth={20}
+                            sliderHeight={20}
+                            translate={22}
+                            onChange={this.handleChangeCheckValidation}
+                            labelLeft={'Validated'} />
                 </div>
             </div>
         );
